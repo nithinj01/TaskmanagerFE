@@ -1,4 +1,30 @@
-# taskmanagerdemo
+AVOW - How to run the Task Manager application
+
+This is a Task Manager web application built with Nuxt.js/Vue.js for the frontend and Spring Boot WebFlux for the backend.
+
+Major Functionalities include:
+•	An overview page with a list of the current tasks
+•	Able to create a new task
+•	Able to mark a task as done/completed
+
+## Prerequisites for the Task Manager application
+
+Before running the application, ensure that you have the following installed:
+
+- Node.js and NPM (for the frontend)
+- Java 11+ and Gradle (for the backend)
+
+## Getting Started
+
+### Frontend application information
+
+1. Navigate to the `frontend` directory:
+
+    ```bash
+    cd frontendappfolder
+    ```
+
+2. Run the application and build setup:
 
 ## Build Setup
 
@@ -17,53 +43,39 @@ $ npm run start
 $ npm run generate
 ```
 
-For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
+3. Access the frontend at [http://localhost:3000](http://localhost:3000).
 
-## Special Directories
+### Backend application information
 
-You can create the following extra directories, some of which have special behaviors. Only `pages` is required; you can delete them if you don't want to use their functionality.
+1. Navigate to the `backend` directory:
 
-### `assets`
+    ```bash
+    cd backend
+    ```
 
-The assets directory contains your uncompiled assets such as Stylus or Sass files, images, or fonts.
+2. Run the Spring Boot application:
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/assets).
+    ```bash
+    ./gradlew bootRun
+    ```
 
-### `components`
+3. The backend will be accessible at [http://localhost:8080](http://localhost:8080).
 
-The components directory contains your Vue.js components. Components make up the different parts of your page and can be reused and imported into your pages, layouts and even other components.
+## Usage
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/components).
+- Visit [http://localhost:3000](http://localhost:3000) to access the Task Manager web application.
+- Use the application to create, view, and complete tasks.
 
-### `layouts`
+## Endpoints used in the applications
 
-Layouts are a great help when you want to change the look and feel of your Nuxt app, whether you want to include a sidebar or have distinct layouts for mobile and desktop.
+- Frontend: [http://localhost:3000](http://localhost:3000)
+- Backend: [http://localhost:8080](http://localhost:8080)
+- REST API Endpoints:
+- GET: `/api/tasks` - Get a list of tasks
+- POST: `/api/tasks` - Create a new task
+- POST: `/api/tasks/{taskId}/complete` - Mark a task as completed
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/layouts).
+## License
 
-
-### `pages`
-
-This directory contains your application views and routes. Nuxt will read all the `*.vue` files inside this directory and setup Vue Router automatically.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/get-started/routing).
-
-### `plugins`
-
-The plugins directory contains JavaScript plugins that you want to run before instantiating the root Vue.js Application. This is the place to add Vue plugins and to inject functions or constants. Every time you need to use `Vue.use()`, you should create a file in `plugins/` and add its path to plugins in `nuxt.config.js`.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/plugins).
-
-### `static`
-
-This directory contains your static files. Each file inside this directory is mapped to `/`.
-
-Example: `/static/robots.txt` is mapped as `/robots.txt`.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/static).
-
-### `store`
-
-This directory contains your Vuex store files. Creating a file in this directory automatically activates Vuex.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/store).
+This project is licensed under the [MIT License](LICENSE).
+![image](https://github.com/nithinj01/TaskmanagerFE/assets/47292784/0df68148-d4bd-46b9-adbb-82b47606bb54)
